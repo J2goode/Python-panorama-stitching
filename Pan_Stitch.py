@@ -2,12 +2,15 @@
 
 # list of things to import
 import os
-
-# get the current path of the folder
-picPath = os.getcwd()
+import opencv
 
 # make a list of each picture
-picList = [os.listdir(picPath)]
+picList = os.listdir(os.getcwd())
+
+# find name of file, remove it from list
+for i in picList:
+    if os.path.basename(__file__) == i:
+        picList.remove(i)
 
 ## STITCH THE PICS TOGETHER ##
 
