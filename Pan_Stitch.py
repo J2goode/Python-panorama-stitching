@@ -1,11 +1,16 @@
 ## FIND THE PICTURES TO STITCH TOGETHER IN THE FOLDER PROGRAM'S IN ##
 
 # list of things to import
-
-# get the current path of the folder
+import os
+import opencv
 
 # make a list of each picture
+picList = os.listdir(os.getcwd())
 
+# find name of file, remove it from list
+for i in picList:
+    if os.path.basename(__file__) == i:
+        picList.remove(i)
 
 ## STITCH THE PICS TOGETHER ##
 
