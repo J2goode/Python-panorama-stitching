@@ -1,11 +1,13 @@
 ## FIND THE PICTURES TO STITCH TOGETHER IN THE FOLDER PROGRAM'S IN ##
 
 # list of things to import
+import os
 
 # get the current path of the folder
+picPath = os.getcwd()
 
 # make a list of each picture
-
+picList = [os.listdir(picPath)]
 
 ## STITCH THE PICS TOGETHER ##
 
